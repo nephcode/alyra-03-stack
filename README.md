@@ -1,17 +1,17 @@
-![Cover](https://github.com/nephcode/underconstruction/blob/main/images/github/githubReadmeHeader.png)
+![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/alyra/readme-alyra-03-header.png)
 
 <!-- ∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴∵ ƸӜƷ ∴ -->
 
-# UNDERCONSTRUCTION
+# STACK DEV FOR CONTRACT & LOCAL CHAIN
 
-Personal template first init
+Alyra Course
 
 ## PROJECT DELIVERIES
 
 | WHAT FOR               | WHEN         |
 | :--------------------- | ------------ |
-| Deadline MVP           | `18-03-2024` |
-| Deadline CERTIFICATION | `15-04-2024` |
+| Deadline MVP           | `10-11-2024` |
+| Deadline CERTIFICATION | `Even odds` |
 
 
 ## INFORMATIONS
@@ -30,16 +30,15 @@ Personal template first init
 
 | TECHNO   | SPEC   |
 | :------- | ------ |
-| FRONTEND | `SASS` |
+| FRONTEND | `SAAS` |
 
 ## RUNNING THE APPS
 
 Create branch
 
 ```
-git branch dev
-git branch release
+run build
 
 ```
 
-![Cover](https://github.com/nephcode/underconstruction/blob/main/images/github/githubReadmeFooter.png)
+![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/alyra/readme-alyra-03-footer.png)
