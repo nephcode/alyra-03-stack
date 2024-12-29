@@ -34,11 +34,5 @@ Alyra Course
 
 ## RUNNING THE APPS
 
-Create branch
-
-```
-run build
-
-```
 
 ![Cover](https://kpkfzczpavanzocxzyta.supabase.co/storage/v1/object/public/alyra/readme-alyra-03-footer.png)
