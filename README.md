@@ -10,7 +10,7 @@ Alyra Course
 
 | WHAT FOR               | WHEN         |
 | :--------------------- | ------------ |
-| Deadline MVP           | `10-11-2024` |
+| Deadline MVP           | `7-01-2025` |
 | Deadline CERTIFICATION | `Even odds` |
 
 

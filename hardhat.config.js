@@ -1,12 +1,16 @@
+// Importation des modules
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-verify");
 require("dotenv").config();
 
+// Variables d'environnement
 const SEPOLIA_URL = process.env.SEPOLIA_URL || "";
 const ETH_PRIVATE_KEY = process.env.ETH_PRIVATE_KEY || "";
 const ETHERSCAN_PRIVATE_KEY = process.env.ETHERSCAN_PRIVATE_KEY || "";
 
 /** @type import('hardhat/config').HardhatUserConfig */
+
+// Configuration de Hardhat pour le déploiement
 module.exports = {
   defaultNetwork: "hardhat",
   networks: {
@@ -33,3 +37,4 @@ module.exports = {
     apiKey: ETHERSCAN_PRIVATE_KEY
   }
 };
+// End of hardhat.config.js
