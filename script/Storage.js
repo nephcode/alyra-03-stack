@@ -1,12 +1,17 @@
 const hre = require("hardhat");
 
 async function main() {
-    const lock = await hre.ethers.deployContract("Storage");
+    const number = 42
 
-    await lock.waitForDeployment();
+    const quantityPush = hre.ethers.parseEther("0.001");
+    const storage = await hre.ethers.deployContract("Storage", [number], {
+        value: quantityPush,
+    });
+
+    await storage.waitForDeployment();
 
     console.log(
-        `Storage deployed to ${lock.target}`
+        `Storage deployed to ${storage.target}`
     );
 }
 
