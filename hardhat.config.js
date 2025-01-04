@@ -22,7 +22,12 @@ module.exports = {
     localhost: {
       url: "http://127.0.0.1:8545",
       chainId: 31337
-    }
+    },
+    hardhat: {
+      forking: {
+        url: SEPOLIA_URL,
+      },
+    },
   },
   solidity: {
     version: "0.8.28",
