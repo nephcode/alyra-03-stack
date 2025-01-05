@@ -1,23 +1,23 @@
 const hre = require("hardhat");
+const { verify } = require("../utils/verify");
+const { network } = require("hardhat");
 
 async function main() {
-    const [deployer] = await hre.ethers.getSigners();
-    console.log("Deploying contracts with the account:", deployer.address);
+    const arguments = [5];
+    const SimpleStorage = await hre.ethers.deployContract("SimpleStorage", arguments);
+    await SimpleStorage.deploymentTransaction().wait(network.config.blockConfirmations || 1);
 
-    // 1. Charger le contrat
-    const Contract = await hre.ethers.getContractFactory("SimpleStorage");
+    console.log(
+        `SimpleStorage deployed to ${SimpleStorage.target}`
+    );
 
-    // 2. Déployer correctement
-    const contract = await Contract.deploy();
-
-    // 3. Attendre que le contrat soit bien miné
-    await contract.waitForDeployment();
-
-    console.log("Contract deployed to:", await contract.getAddress());
+    if (!network.name.includes('localhost') && process.env.ETHERSCAN) {
+        console.log('Verifying...');
+        await verify(SimpleStorage.target, arguments);
+    }
 }
 
-// Gérer les erreurs proprement
 main().catch((error) => {
     console.error(error);
     process.exitCode = 1;
-}); 
+});
